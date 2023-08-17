@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-*print_most_numbers - prints
-* 
-*Return: void
+* print_most_numbers - prints
+* owned by Me
+* Return: void
 */
 
 void print_most_numbers(void)
