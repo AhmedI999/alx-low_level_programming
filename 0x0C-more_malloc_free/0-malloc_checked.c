@@ -1,17 +1,19 @@
 #include "main.h"
 
 /**
- * *malloc_checked - allocates memory using malloc and exit if failed
- * @b: int
- * Return: pointer to the array initialized or null
+ * malloc_checked - cause normal process termination with a status value of 98
+ *
+ * @b: allocated memory
+ *
+ * Return: a pointer to the allocated memory
  */
-
 void *malloc_checked(unsigned int b)
 {
-	int *m = malloc(b)
+	void *i;
 
-	if (m == 0)
+	i = malloc(b);
+	if (i == NULL)
 		exit(98);
-	return (m);
+	return (i);
 
 }
